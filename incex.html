@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Login -->
+        <div id="login-form" class="form-container visible">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="login-username">Usuário</label>
+                <input type="text" id="login-username" placeholder="Digite seu usuário">
+                <div id="login-username-error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" placeholder="Digite sua senha">
+                <div id="login-password-error" class="error"></div>
+            </div>
+            <button id="login-button">Entrar</button>
+            <div class="links">
+                <a id="create-account-link">Criar conta</a>
+                <a id="forgot-password-link">Esqueci a senha</a>
+            </div>
+        </div>
+        
+        <!-- Tela de Cadastro -->
+        <div id="register-form" class="form-container hidden">
+            <h1>Criar Conta</h1>
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" placeholder="Digite seu email">
+                <div id="register-email-error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="register-username">Usuário</label>
+                <input type="text" id="register-username" placeholder="Digite um nome de usuário">
+                <div id="register-username-error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Senha</label>
+                <input type="password" id="register-password" placeholder="Digite uma senha">
+                <div id="register-password-error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="register-confirm-password">Confirmar Senha</label>
+                <input type="password" id="register-confirm-password" placeholder="Confirme sua senha">
+                <div id="register-confirm-password-error" class="error"></div>
+            </div>
+            <button id="register-button">Cadastrar</button>
+            <div class="links">
+                <a id="back-to-login-link">Voltar para login</a>
+            </div>
+            <div id="register-success" class="success"></div>
+        </div>
+        
+        <!-- Tela de Recuperação de Senha -->
+        <div id="forgot-password-form" class="form-container hidden">
+            <h1>Recuperar Senha</h1>
+            <div class="form-group">
+                <label for="forgot-email">Email</label>
+                <input type="email" id="forgot-email" placeholder="Digite seu email cadastrado">
+                <div id="forgot-email-error" class="error"></div>
+            </div>
+            <button id="recover-button">Recuperar Senha</button>
+            <div class="links">
+                <a id="back-to-login-from-forgot-link">Voltar para login</a>
+            </div>
+            <div id="forgot-success" class="success"></div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
